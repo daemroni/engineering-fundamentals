@@ -24,4 +24,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
-          images: lrengineering.azurecr.io/ipt-spins:latest 
+          images: daemr.azurecr.io/ipt-spins:latest 
