@@ -37,9 +37,21 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: execute the unit test
-        run: echo "** TASK A - Add the necessary steps such that the unit test is executed on every merge request or pull request on the main branch."
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
 
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm test
+
+      - name: Run test coverage
+        run: npm run test:coverage
+        continue-on-error: true
 
   publish-docker-image:
     needs: test
