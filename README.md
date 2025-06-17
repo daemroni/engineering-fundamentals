@@ -45,7 +45,7 @@ Adapt GitHub Actions workflow in the ``.gibhub/workflows`` directory such, that 
 2. Create your own [azure container registry](https://portal.azure.com/#browse/Microsoft.ContainerRegistry%2Fregistries) \
     a) You will need to create a new resource group. Use default configs for resource group and container registry. \
     b) Use your initials (e.g. SZE) as prefix for Resource Group
-3. Get password of your ACR from your (local) Terminal. For the moment, we are using the ACR Admin credentials for publishing images to the ACR.
+3. Get password of your ACR from your Terminal. For the moment, we are using the ACR Admin credentials for publishing images to the ACR.
 ```
 az login
 az acr update --name <My-Azure-ACR> --admin-enabled true
