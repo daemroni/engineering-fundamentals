@@ -84,7 +84,7 @@ az webapp create \
      --deployment-container-image-name <your-container-registry>/ipt-spins:latest
 ```
 
-3. A Service Principal in Azure which has the contributor role on your resource
+3. A Service Principal in Azure which has the contributor role on your resource.
 
 ```bash
 az ad sp create-for-rbac --name "<your-service-principal-name>" --role contributor \
