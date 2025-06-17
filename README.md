@@ -10,7 +10,7 @@ This readme helps you to create an CI environment which builds your project, pub
 - **solution**: Example solution (Musterlösung)
 
 # Setup
-1. Create a **public** fork of this Github repo **in your private github namespace** (this is required as we are using the FREE version of SonarCloud later on) \
+1. Create a **public** fork of this Github repo **in your private github namespace** (this is required as we are using the FREE version of SonarCloud later on) 
  
 2. Create Codespace (https://github.com/YourUsername/YourRepoName &rarr; Code &rarr; Codespaces) and install the azure cli
 ```
