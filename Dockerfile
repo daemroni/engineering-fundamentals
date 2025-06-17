@@ -25,7 +25,7 @@ RUN npm run build
 FROM node:18-alpine AS serve
 
 # Create a non-root user and group for the serve stage
-RUN npm install -g serve \
+RUN npm install -g serve --ignore-scripts \
     && addgroup --system nodeapp \
     && adduser --system --ingroup nodeapp nodeapp
 
